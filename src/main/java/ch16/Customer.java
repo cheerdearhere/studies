@@ -5,7 +5,6 @@ public class Customer {
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
-	int sd;
 	//bonus
 	int bonusPoint;//적립할 포인트
 	double bonusRatio;//적립비율
