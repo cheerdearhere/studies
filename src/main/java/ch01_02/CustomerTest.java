@@ -1,4 +1,4 @@
-package fastcampus;
+package ch01_02;
 
 public class CustomerTest {
 	public static void main(String[] args) {

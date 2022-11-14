@@ -1,4 +1,4 @@
-package fastcampus;
+package ch01_02;
 
 public class Customer {
 	//customer information

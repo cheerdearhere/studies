@@ -1,4 +1,4 @@
-package fastcampus;
+package ch01_02;
 
 public class VIPCustomer extends Customer {
 /*	super class의 속성은 따로 선언하지 않아도됨
