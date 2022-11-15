@@ -1,5 +1,4 @@
 package kwangClass;
-
 import java.util.Scanner;
 
 public class Question02 {
