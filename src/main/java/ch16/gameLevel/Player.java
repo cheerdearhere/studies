@@ -1,16 +1,17 @@
 package ch16.gameLevel;
 
 public class Player {
-	PlayerLevel playerLevel;
+	GameLevel playerLevel = new BeginnerLevel();
+	
 	public void play(int i) {
 		playerLevel.go(i);
 	}
-	public void upgradeLevel(AdvancedLevel aLevel) {
-		// TODO Auto-generated method stub
-		
+	public void upgradeLevel(AdvancedLevel level) {
+		playerLevel = new AdvancedLevel();
+		playerLevel.showLevelmessage();
 	}
-	public void upgradeLevel(SuperLevel sLevel) {
-		// TODO Auto-generated method stub
-		
+	public void upgradeLevel(SuperLevel level) {
+		playerLevel = new SuperLevel();
+		playerLevel.showLevelmessage();
 	}
 }
