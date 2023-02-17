@@ -139,6 +139,7 @@ public class RandomPicker {
 			}
 			
 			
+			
 			System.out.println("더 뽑으실 분 있습니까?(y/n)");
 			responsYN=scanner.nextLine();
 			if(responsYN.equals("Y")||responsYN.equals("y")) {
