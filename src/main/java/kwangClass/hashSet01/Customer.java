@@ -38,14 +38,21 @@ public class Customer {
 	}
 	public void deleteContract(String contractTitle) {
 		Iterator<Contract> it=contractSet.iterator();
+		Contract targetContract=null;
 		while(it.hasNext()) {
 			Contract contract = it.next();
 			if(contract.similarContract(contractTitle)) {
-				contractSet.remove(contract);
-				System.out.println("계약 "+contract.getContractName()+"(이)가 삭제되었습니다.");
+				targetContract=contract;
 			};
 		}
-		System.out.println("계약을 찾을 수 없습니다.");
+		if(targetContract==null) {
+			System.out.println("계약을 찾을 수 없습니다.");
+			return;
+		}
+		else {
+			System.out.println("계약 "+targetContract.getContractName()+"(이)가 삭제되었습니다.");
+			contractSet.remove(targetContract);
+		}
 	}
 	public HashSet<Contract> allContractSet(){
 		Iterator<Contract> it=contractSet.iterator();
